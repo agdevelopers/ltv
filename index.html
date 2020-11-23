@@ -10,20 +10,20 @@
         <h1>Calculadora de LTV</h1>
     </div>
     <div>
-        <form for="TKM">
-            <label>Qual é o Valor do Ticket Médio?</label>
+        <form>
+            <label for="TKM">Qual é o valor do ticket médio?</label>
             <p>
-                R$ <input type="number" placeholder="150,00" name="TKM">
+                R$ <input type="number" placeholder="150,00" name="TKM" id="TKM">
             </p>
-            <label>Qual é a quantidade média de pedidos?</label>
+            <label for="Pedido">Qual é a quantidade média de pedidos?</label>
             <p>
-                <input type="number" placeholder="2,5" name="Pedido">
+                <input type="number" placeholder="2,5" name="Pedido" id="Pedido">
             </p>
-            <label>Qual é a média de anos de relacionamento do Cliente?</label>
+            <label for="Período">Qual é a média de anos de relacionamento do cliente?</label>
             <p>
-                <input type="number" placeholder="1,5" name="Período">
+                <input type="number" placeholder="1,5" name="Período" id=Período>
             </p>
-            <button>Calcular</button>
+            <button type="submit">Calcular</button>
         </form>
     </div>
 </body>

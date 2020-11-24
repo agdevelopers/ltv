@@ -4,27 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de LTV</title>
-</head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    </head>
 <body>
-    <div>
-        <h1>Calculadora de LTV</h1>
-    </div>
-    <div>
-        <form>
-            <label for="TKM">Qual é o valor do ticket médio?</label>
-            <p>
-                R$ <input type="number" placeholder="150,00" name="TKM" id="TKM">
-            </p>
-            <label for="Pedido">Qual é a quantidade média de pedidos?</label>
-            <p>
-                <input type="number" placeholder="2,5" name="Pedido" id="Pedido">
-            </p>
-            <label for="Período">Qual é a média de anos de relacionamento do cliente?</label>
-            <p>
-                <input type="number" placeholder="1,5" name="Período" id=Período>
-            </p>
-            <button type="submit">Calcular</button>
-        </form>
+    <div class="container">
+        <div>
+            <h1 class="title">Calculadora  de  LTV</h1>
+        </div>
+        <div>
+            <form class="form">
+                <label for="TKM">Qual é o valor do ticket médio?</label>
+                <p>
+                    R$ <input type="number" placeholder="150,00" name="TKM" id="TKM" class="ask">
+                </p>
+                <label for="Pedido">Qual é a quantidade média de pedidos?</label>
+                <p>
+                    <input type="number" placeholder="2,5" name="Pedido" id="Pedido" class="ask">
+                </p>
+                <label for="Período">Qual é o período de permanência do cliente (em anos)?</label>
+                <p>
+                    <input type="number" placeholder="1,5" name="Período" id=Período class="ask">
+                </p>
+                <button type="submit" class="submit">Calcular</button>
+            </form>
+        </div>
     </div>
 </body>
 </html>

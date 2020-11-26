@@ -13,22 +13,27 @@
             <h1 class="title">Calculadora  de  LTV</h1>
         </div>
         <div>
-            <form class="form">
+            <form class="form" id="form">
                 <label for="TKM">Qual é o valor do ticket médio?</label>
                 <p>
-                    R$ <input type="number" placeholder="150,00" name="TKM" id="TKM" class="ask">
+                    R$ <input type="number" placeholder="150,00" name="TKM" id="TKM" class="ask" required>
                 </p>
                 <label for="Pedido">Qual é a quantidade média de pedidos?</label>
                 <p>
-                    <input type="number" placeholder="2,5" name="Pedido" id="Pedido" class="ask">
+                    <input type="number" placeholder="2,5" name="Pedido" id="Pedido" class="ask" required>
                 </p>
                 <label for="Período">Qual é o período de permanência do cliente (em anos)?</label>
                 <p>
-                    <input type="number" placeholder="1,5" name="Período" id=Período class="ask">
+                    <input type="number" placeholder="1,5" name="Período" id=Período class="ask" required>
                 </p>
                 <button type="submit" class="submit">Calcular</button>
             </form>
         </div>
+        <div id="result">
+            O LTV (Live Time Value) do seu Cliente é:
+            <p>R$ <span id="calculo"></span></p>
+        </div>
     </div>
+    <script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>
